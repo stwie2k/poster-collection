@@ -48,7 +48,7 @@ namespace PosterCollection
                 passwordTextBlock.Password = user.Password;
                 emailTextBlock.Text = user.Email;
                 phoneTextBlock.Text = user.Phone;
-                roleTextBlock.Text = temp.Role == 0 ? "管理员" : "用户";
+                roleTextBlock.Text = user.Role == 0 ? "管理员" : "用户";
             }
         }
 

@@ -2,6 +2,7 @@
 using PosterCollection.Service;
 using PosterCollection.ViewModels;
 using System;
+using System.Collections.Generic;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Storage.Streams;
 using Windows.UI.Popups;
@@ -53,6 +54,9 @@ namespace PosterCollection
                     tvPosterImage.Visibility = Visibility.Collapsed;
 
                     Mdetail = viewModel.TheMovieDetail;
+
+                    List<Cast> ca = Mdetail.casts.cast;
+
 
                     background = Mdetail.backdrop_path;
 
